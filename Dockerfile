@@ -4,7 +4,7 @@ FROM alpine:latest
 MAINTAINER Golfen Guo <golfen.guo@daocloud.io> 
 
 # Install Nginx
-RUN apk --update add nginx
+RUN startup
 
 # Add 2048 stuff into Nginx server
 COPY . /usr/share/nginx/html
